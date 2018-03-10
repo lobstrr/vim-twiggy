@@ -127,7 +127,7 @@ OTHER OPTIONS                                   *twiggy-options*
 Default: 31
 The width of Twiggy's buffer
 >
-  let g:twiggy_num_colums = 25
+  let g:twiggy_num_columns = 25
 <
                                                 *'split_method'*
 Default: 'topleft'
@@ -211,6 +211,9 @@ O                 Same as C
                   Fetching~
                                                 *twiggy-f*
 F                 Fetch the remote for the branch under the cursor.
+
+                                                *twiggy-V*
+V                 Pull the branch under the cursor.
 
                   Merging and Rebasing~
                                                 *twiggy-m*
