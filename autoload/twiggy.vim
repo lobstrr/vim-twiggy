@@ -539,7 +539,7 @@ function! s:quickhelp_view() abort
   call add(output, 'R     rebase remote')
   call add(output, 'u     abort merge/rebase')
   call add(output, '^     push')
-  call add(output, 'g^    push (promted)')
+  call add(output, 'g^    push (prompted)')
   call add(output, 'dd    delete')
   if g:twiggy_enable_remote_delete
     call add(output, 'd^    delete from server')
