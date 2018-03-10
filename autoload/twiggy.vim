@@ -829,11 +829,14 @@ function! s:Quickhelp() abort
 
   let t:twiggy_cached_git_dir = t:twiggy_git_dir
 
- silent keepalt enew
+  silent keepalt edit quickhelp
+  setlocal filetype=twiggyqh buftype=nofile bufhidden=delete
+  setlocal nonumber nowrap lisp
+  setlocal modifiable
+  silent 1,$delete _
   let b:git_dir = t:twiggy_cached_git_dir
   unlet t:twiggy_cached_git_dir
-  setlocal filetype=twiggyqh buftype=nofile
-  setlocal nonumber nowrap lisp
+  let bufnr = bufnr('')
 
   nnoremap <buffer> <silent> q :quit<CR>
   nnoremap <buffer> <silent> ? :Twiggy<CR>
