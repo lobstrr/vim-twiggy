@@ -533,6 +533,7 @@ function! s:quickhelp_view() abort
   call add(output, 'C     checkout remote')
   call add(output, 'O     checkout remote')
   call add(output, 'F     fetch remote')
+  call add(output, 'V     pull')
   call add(output, 'm     merge')
   call add(output, 'M     merge remote')
   call add(output, 'r     rebase')
