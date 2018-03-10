@@ -519,9 +519,9 @@ function! s:quickhelp_view() abort
   let output = []
   call add(output, 'Twiggy Quickhelp')
   call add(output, '===========================')
-  call add(output, '<C-N> cursor to next branch')
-  call add(output, '<C-P> cursor to prev branch')
-  call add(output, 'J     cursor to curr branch')
+  call add(output, '<C-N> jump to next group')
+  call add(output, '<C-P> jump to prev group')
+  call add(output, 'J     jump to curr branch')
   call add(output, 'q     quit')
   call add(output, '?     toggle this help')
   call add(output, '---------------------------')
